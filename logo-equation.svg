@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Logo Equation">
+  <defs>
+    <linearGradient id="eqStroke" x1="18" y1="18" x2="102" y2="102" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c87426" />
+      <stop offset="0.45" stop-color="#99612f" />
+      <stop offset="1" stop-color="#d79d5e" />
+    </linearGradient>
+  </defs>
+  <g stroke="url(#eqStroke)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M33 26c-7 0-13 6-13 13s6 13 13 13h9V39h-9" />
+    <path d="M87 26c7 0 13 6 13 13s-6 13-13 13h-9V39h9" />
+    <path d="M33 94c-7 0-13-6-13-13s6-13 13-13h9v13h-9" />
+    <path d="M87 94c7 0 13-6 13-13s-6-13-13-13h-9v13h9" />
+    <path d="M42 26v68" />
+    <path d="M78 26v68" />
+    <path d="M42 52h36" />
+    <path d="M42 68h36" />
+  </g>
+</svg>
