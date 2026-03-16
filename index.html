@@ -9,11 +9,11 @@
   <title>EQUATION B&C — L’exigence technique au service de vos projets</title>
   <meta
     name="description"
-    content="Entreprise générale du batiment tous corps de métier : électricité, plomberie, climatisation, domotique, peinture, finitions et rénovation."
+    content="Entreprise générale du bâtiment tous corps de métier : électricité, plomberie, climatisation, domotique, peinture, finitions et rénovation."
   />
 
-  <link rel="icon" type="image/svg+xml" href="logo-equation.svg" />
-  <link rel="shortcut icon" href="logo-equation.svg" />
+  <link rel="icon" type="image/svg+xml" href="logo-equation-icon.svg" />
+  <link rel="shortcut icon" href="logo-equation.ico" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,21 +24,17 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="home">
   <!-- =========================================
        HEADER / NAVIGATION
   ========================================== -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-        <img src="logo-equation.svg" alt="Logo EQUATION B&C" class="brand-logo" />
-        <div>
-          <div class="brand-title">EQUATION</div>
-          <div class="brand-sub">B&amp;C</div>
-        </div>
+        <img src="logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="brand-logo brand-logo-wide" />
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -51,6 +47,7 @@
         <a class="menu-btn" href="#engagements">Engagements</a>
         <a class="menu-btn" href="#avis">Avis</a>
         <a class="menu-btn" href="#faq">FAQ</a>
+        <a class="menu-btn" href="blog.html" data-page-link="blog">Blog</a>
         <a class="menu-btn menu-btn-primary" href="#contact">Demander un devis</a>
 
         <a
@@ -113,7 +110,7 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Obtenir un devis</a>
-            <a class="btn btn-secondary" href="#services">Découvrir nos expertises</a>
+            <a class="btn btn-secondary" href="blog.html">Voir nos réalisations</a>
           </div>
 
           <div class="hero-badges">
@@ -129,7 +126,7 @@
         <div class="hero-visual reveal">
           <div class="visual-card visual-card-main">
             <img
-              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80"
+              src="WhatsApp Image 2026-03-13 at 15.27.28.jpeg"
               alt="Cuisine moderne et design"
             />
             <div class="visual-overlay">
@@ -141,7 +138,7 @@
           <div class="visual-stack">
             <div class="visual-card">
               <img
-                src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+                src="WhatsApp Image 2026-03-13 at 15.27.27.jpeg"
                 alt="Éclairage LED et finitions"
               />
               <div class="visual-overlay">
@@ -152,7 +149,7 @@
 
             <div class="visual-card">
               <img
-                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+                src="WhatsApp Image 2026-03-13 at 15.27.29.jpeg"
                 alt="Salle de bain moderne"
               />
               <div class="visual-overlay">
@@ -176,7 +173,7 @@
         </div>
         <div class="stats-item">
           <strong>2 expertises fondatrices</strong>
-          <span>Électricité & plomberie</span>
+          <span>Électricité &amp; plomberie</span>
         </div>
         <div class="stats-item">
           <strong>Tous corps d’état</strong>
@@ -193,26 +190,27 @@
          A PROPOS
     ========================================== -->
     <section class="section" id="apropos">
-      <div class="container section-two-col">
+      <div class="container split-section">
         <div class="section-head reveal">
           <p class="eyebrow">À propos</p>
-          <h2>Une expertise née de l’expérience.</h2>
+          <h2>Une coordination fiable pour des chantiers maîtrisés.</h2>
         </div>
 
-        <div class="text-block reveal">
-          <p>
-            EQUATION B&amp;C est née de la rencontre de deux professionnels passionnés :
+        <div class="section-copy reveal card surface-card">
+          <p>EQUATION B&C est née de la rencontre de deux professionnels passionnés : 
             Clément, spécialiste de l’électricité, et Bucci, expert en plomberie.
           </p>
-          <p>
-            Après plus de vingt années d’expérience chacun dans leurs domaines respectifs,
-            ils ont choisi d’unir leurs compétences pour proposer une approche globale
-            des travaux techniques et de la rénovation.
+          <p>Après plus de vingt années d’expérience chacun dans leurs domaines respectifs,
+             ils ont choisi d’unir leurs compétences pour proposer une approche globale 
+             des travaux techniques et de la rénovation.
           </p>
           <p>
-            Cette complémentarité permet aujourd’hui à l’entreprise d’intervenir sur des projets variés
-            tout en garantissant une cohérence technique, une qualité d’exécution irréprochable
-            et un véritable accompagnement client.
+            Nous accompagnons nos clients sur des projets techniques et esthétiques,
+            en intervenant sur tout ou partie du chantier selon les besoins.
+          </p>
+          <p>
+            Notre force repose sur la coordination, la rigueur d’exécution et la capacité à piloter
+            plusieurs métiers avec une même exigence de qualité.
           </p>
         </div>
       </div>
@@ -225,66 +223,33 @@
       <div class="container">
         <div class="section-head center reveal">
           <p class="eyebrow">Expertises</p>
-          <h2>Une approche globale des installations techniques et des travaux du bâtiment.</h2>
-          <p class="section-text">
-            Nous proposons une prise en charge complète de vos projets, de l’étude à la réalisation,
-            avec une attention constante portée à la fiabilité, à l’esthétique et à la qualité du rendu final.
-          </p>
+          <h2>Des prestations techniques complètes et cohérentes.</h2>
         </div>
 
         <div class="service-grid">
-          <article class="service-card reveal">
-            <div class="service-icon">⚡</div>
+          <article class="service-card card reveal">
             <h3>Électricité</h3>
-            <p>
-              Conception et réalisation d’installations électriques performantes,
-              adaptées aux besoins actuels et aux évolutions technologiques.
-            </p>
+            <p>Installation, remise aux normes, éclairage, tableaux électriques et solutions sur mesure.</p>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🧠</div>
-            <h3>Domotique & sécurité</h3>
-            <p>
-              Intégration de solutions intelligentes : domotique, vidéosurveillance,
-              contrôle d’accès et gestion des équipements.
-            </p>
+          <article class="service-card card reveal">
+            <h3>Plomberie</h3>
+            <p>Distribution, évacuation, sanitaires, cuisine, salle de bain et réseaux techniques.</p>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🚿</div>
-            <h3>Plomberie & sanitaires</h3>
-            <p>
-              Installation et rénovation de réseaux de plomberie avec un haut niveau
-              d’exigence sur la fiabilité et les finitions.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">❄️</div>
+          <article class="service-card card reveal">
             <h3>Climatisation</h3>
-            <p>
-              Mise en place de solutions de confort thermique performantes,
-              intégrées avec soin dans l’existant.
-            </p>
+            <p>Confort thermique, intégration propre, optimisation des performances et durabilité.</p>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🌿</div>
-            <h3>Énergies renouvelables</h3>
-            <p>
-              Installation de pompes à chaleur et de systèmes visant
-              à améliorer la performance énergétique du bâtiment.
-            </p>
+          <article class="service-card card reveal">
+            <h3>Peinture &amp; finitions</h3>
+            <p>Préparation des supports, finitions soignées, harmonie visuelle et rendu premium.</p>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🎨</div>
-            <h3>Aménagement & finitions</h3>
-            <p>
-              Plâtrerie, peinture, revêtements, menuiserie intérieure et extérieure,
-              avec un rendu propre, harmonieux et durable.
-            </p>
+          <article class="service-card card reveal">
+            <h3>Domotique &amp; sécurité</h3>
+            <p>Automatisation, pilotage intelligent, équipements connectés et sécurisation des espaces.</p>
+          </article>
+          <article class="service-card card reveal">
+            <h3>Rénovation globale</h3>
+            <p>Coordination de l’ensemble des interventions avec un interlocuteur unique.</p>
           </article>
         </div>
       </div>
@@ -297,36 +262,25 @@
       <div class="container">
         <div class="section-head center reveal">
           <p class="eyebrow">Méthode</p>
-          <h2>Une gestion de projet maîtrisée.</h2>
-          <p class="section-text">
-            Parce qu’un chantier réussi repose sur une organisation rigoureuse,
-            EQUATION B&amp;C assure un suivi précis à chaque étape du projet.
-          </p>
+          <h2>Un déroulé clair, du besoin initial à la livraison.</h2>
         </div>
 
-        <div class="method-grid">
-          <article class="method-card reveal">
-            <span>01</span>
-            <h3>Analyse</h3>
-            <p>Compréhension du besoin, étude des contraintes techniques et définition des priorités.</p>
+        <div class="timeline-grid">
+          <article class="timeline-card card reveal">
+            <span>Analyse</span>
+            <p>Étude du besoin, contraintes, budget, environnement et priorités du projet.</p>
           </article>
-
-          <article class="method-card reveal">
-            <span>02</span>
-            <h3>Préparation</h3>
-            <p>Planification du chantier, coordination des interventions et vision claire du projet.</p>
+          <article class="timeline-card card reveal">
+            <span>Préparation</span>
+            <p>Organisation du chantier, coordination des corps de métier et planification des étapes.</p>
           </article>
-
-          <article class="method-card reveal">
-            <span>03</span>
-            <h3>Réalisation</h3>
-            <p>Mise en œuvre soignée, maîtrise technique et suivi continu de l’exécution.</p>
+          <article class="timeline-card card reveal">
+            <span>Réalisation</span>
+            <p>Exécution rigoureuse, suivi d’avancement, finitions et contrôle qualité.</p>
           </article>
-
-          <article class="method-card reveal">
-            <span>04</span>
-            <h3>Livraison</h3>
-            <p>Contrôle des finitions, vérifications et remise d’un résultat propre et durable.</p>
+          <article class="timeline-card card reveal">
+            <span>Livraison</span>
+            <p>Validation finale, échanges de clôture et accompagnement jusqu’à la mise en service.</p>
           </article>
         </div>
       </div>
@@ -339,96 +293,88 @@
       <div class="container">
         <div class="section-head center reveal">
           <p class="eyebrow">Engagements</p>
-          <h2>Une exigence de qualité à chaque étape.</h2>
-          <p class="section-text">
-            Notre démarche repose sur la rigueur technique, la fiabilité des solutions
-            et une relation de confiance durable avec nos clients.
-          </p>
+          <h2>Une exigence constante sur le fond comme sur la forme.</h2>
         </div>
 
         <div class="engagement-grid">
-          <article class="engagement-card reveal">
-            <h3>Rigueur technique</h3>
-            <p>Chaque intervention est pensée dans le respect des normes et des règles de l’art.</p>
+          <article class="engagement-card card reveal">
+            <h3>Interlocuteur unique</h3>
+            <p>Un pilotage simplifié pour une communication fluide à chaque étape.</p>
           </article>
-
-          <article class="engagement-card reveal">
-            <h3>Fiabilité</h3>
-            <p>Nous privilégions des équipements et des solutions reconnus pour leur performance durable.</p>
+          <article class="engagement-card card reveal">
+            <h3>Qualité d’exécution</h3>
+            <p>Des prestations propres, durables et conformes aux attentes du chantier.</p>
           </article>
-
-          <article class="engagement-card reveal">
-            <h3>Accompagnement</h3>
-            <p>Un interlocuteur unique pour simplifier les échanges et garantir une communication claire.</p>
+          <article class="engagement-card card reveal">
+            <h3>Respect des délais</h3>
+            <p>Une organisation structurée pour limiter les imprévus et sécuriser l’avancement.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- =========================================
-         AVIS / RESEAUX
+         BLOG APERCU
     ========================================== -->
-    <section class="section" id="avis">
+    <section class="section" id="realisations">
       <div class="container">
         <div class="section-head center reveal">
-          <p class="eyebrow">Avis & réseaux</p>
-          <h2>Suivez notre actualité et découvrez les retours de nos clients.</h2>
+          <p class="eyebrow">Réalisations</p>
+          <h2>Découvrez un aperçu de nos projets récents.</h2>
         </div>
 
-        <div class="social-review-box reveal">
-          <div class="social-review-content">
-            <h3>Présence en ligne</h3>
-            <p>
-              Suivez EQUATION B&amp;C sur Instagram pour voir les réalisations et l’actualité du terrain,
-              et sur LinkedIn pour la communication professionnelle de l’entreprise.
-            </p>
+        <div class="blog-preview-grid">
+          <article class="blog-preview-card card reveal">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Suite parentale rénovée" />
+            <div>
+              <h3>Suite parentale rénovée</h3>
+              <p>Création d’un espace élégant avec reprise des réseaux, éclairage intégré et finitions sur mesure.</p>
+            </div>
+          </article>
+          <article class="blog-preview-card card reveal">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Cuisine haut de gamme" />
+            <div>
+              <h3>Cuisine haut de gamme</h3>
+              <p>Coordination complète des travaux techniques et décoratifs pour un rendu contemporain.</p>
+            </div>
+          </article>
+        </div>
 
+        <div class="section-cta reveal center-cta">
+          <a class="btn btn-secondary" href="blog.html">Accéder au blog des réalisations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         AVIS / PRESENCE
+    ========================================== -->
+    <section class="section section-alt" id="avis">
+      <div class="container">
+        <div class="social-review-box card reveal">
+          <div>
+            <p class="eyebrow">Présence en ligne</p>
+            <h2>Retrouvez EQUATION B&amp;C sur les réseaux et les plateformes d’avis.</h2>
             <div class="social-actions">
-              <a
-                class="btn btn-instagram"
-                href="https://www.instagram.com/equation_b_et_c"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir Instagram
-              </a>
-
-              <a
-                class="btn btn-linkedin"
-                href="https://www.linkedin.com/company/VOTRE-PAGE-LINKEDIN/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir LinkedIn
-              </a>
-
-              <a
-                class="btn btn-secondary"
-                href="https://fr.trustpilot.com/review/VOTRE-PAGE-TRUSTPILOT"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir nos avis
-              </a>
-
-              <a
-                class="btn btn-primary"
-                href="https://fr.trustpilot.com/evaluate/VOTRE-DOMAINE.COM"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Laisser un avis
-              </a>
+              <a class="btn btn-linkedin" href="https://www.linkedin.com/company/VOTRE-PAGE-LINKEDIN/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn btn-instagram" href="https://www.instagram.com/equation_b_et_c" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
           </div>
 
           <div class="trust-box-placeholder">
-            <p class="tp-title">Zone Trustpilot</p>
+            <p class="tp-title">Avis clients</p>
             <p>
-              Colle ici ton widget officiel Trustpilot Business
-              pour afficher les étoiles, la note globale et les derniers avis.
+              Ajoutez ici votre widget Trustpilot ou les avis recueillis pour renforcer la confiance.
             </p>
+            <a href="https://fr.trustpilot.com/review/VOTRE-PAGE-TRUSTPILOT" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Voir les avis</a>
           </div>
+          <a class="btn btn-secondary" href="https://fr.trustpilot.com/review/equation-bc.fr" target="_blank" rel="noopener noreferrer">
+            Voir nos avis
+          </a>
+
+          <a class="btn btn-primary" href="https://fr.trustpilot.com/review/equation-bc.fr" target="_blank" rel="noopener noreferrer">
+                Laisser un avis
+          </a>
         </div>
       </div>
     </section>
@@ -444,7 +390,7 @@
         </div>
 
         <div class="faq-list">
-          <details class="faq-item reveal">
+          <details class="faq-item card reveal">
             <summary>Intervenez-vous sur des projets complets ?</summary>
             <p>
               Oui, nous proposons une approche globale des travaux techniques et d’aménagement,
@@ -452,7 +398,7 @@
             </p>
           </details>
 
-          <details class="faq-item reveal">
+          <details class="faq-item card reveal">
             <summary>Travaillez-vous pour les particuliers et les professionnels ?</summary>
             <p>
               Oui, avec des prestations haut de gamme pour les particuliers
@@ -460,7 +406,7 @@
             </p>
           </details>
 
-          <details class="faq-item reveal">
+          <details class="faq-item card reveal">
             <summary>Pouvez-vous intervenir uniquement sur une partie du chantier ?</summary>
             <p>
               Oui. Nous pouvons intervenir sur une prestation ciblée comme l’électricité,
@@ -468,7 +414,7 @@
             </p>
           </details>
 
-          <details class="faq-item reveal">
+          <details class="faq-item card reveal">
             <summary>Comment se passe la demande de devis ?</summary>
             <p>
               Vous remplissez le formulaire, nous analysons votre besoin puis nous revenons vers vous
@@ -484,7 +430,7 @@
     ========================================== -->
     <section class="section" id="contact">
       <div class="container contact-grid">
-        <div class="contact-card reveal">
+        <div class="contact-card card reveal">
           <p class="eyebrow">Contact</p>
           <h2>Parlons de votre projet.</h2>
           <p>
@@ -495,7 +441,7 @@
           <ul class="contact-list">
             <li><strong>Adresse :</strong> 45 rue du Fort Manoir, 78320 Le Mesnil-Saint-Denis</li>
             <li><strong>Téléphone :</strong> 01 80 28 12 47</li>
-            <li><strong>Email :</strong> equation78650@gmail.com</li>
+            <li><strong>Email :</strong> <a href="mailto:contact@equation-bc.fr">contact@equation-bc.fr</a></li>
           </ul>
 
           <div class="contact-note">
@@ -508,7 +454,8 @@
         </div>
 
         <form
-          class="contact-form reveal"
+          class="contact-form card reveal"
+          id="contact-formulaire"
           name="contact"
           method="POST"
           data-netlify="true"
@@ -589,14 +536,10 @@
     ========================================== -->
     <section class="section">
       <div class="container">
-        <div class="map-card reveal">
+        <div class="map-card card reveal">
           <div class="map-head">
             <p class="eyebrow">Localisation</p>
             <h2>Retrouvez-nous au Mesnil-Saint-Denis.</h2>
-            <p>
-              Une carte intégrée permet à vos visiteurs de localiser facilement l’entreprise
-              et de préparer un rendez-vous.
-            </p>
           </div>
 
           <div class="map-frame">
@@ -611,19 +554,22 @@
       </div>
     </section>
   </main>
-<a href="contact.html#contact-formulaire" class="floating-contact" aria-label="Aller au formulaire de contact">Nous contacter</a>
+
+  <a href="#contact" class="floating-contact" aria-label="Aller au formulaire de contact">Nous contacter</a>
+
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <img src="logo-equation.svg" alt="Logo EQUATION B&C" class="footer-logo" />
+        <img src="logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="footer-logo footer-logo-wide" />
         <span>© 2026 EQUATION B&amp;C — Tous droits réservés</span>
       </div>
 
       <div class="footer-links">
+        <a href="blog.html">Blog</a>
         <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="mailto:contact@equation-bc.fr">contact@equation-bc.fr</a>
         <a href="https://www.instagram.com/equation_b_et_c" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="https://www.linkedin.com/company/VOTRE-PAGE-LINKEDIN/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://fr.trustpilot.com/review/VOTRE-PAGE-TRUSTPILOT" target="_blank" rel="noopener noreferrer">Trustpilot</a>
       </div>
     </div>
   </footer>

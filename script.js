@@ -93,16 +93,29 @@ if (menuToggle && mainMenu) {
 }
 
 /* =========================================
-   PETIT FEEDBACK SUR LE BOUTON FLOTTANT
+   BOUTON FLOTTANT CONTACT
 ========================================== */
 const floatingContact = document.querySelector(".floating-contact");
 
 if (floatingContact) {
-  floatingContact.addEventListener("click", () => {
+  floatingContact.addEventListener("click", (event) => {
+    const targetSelector = floatingContact.getAttribute("href");
+    const target = document.querySelector(targetSelector);
+
     floatingContact.classList.add("clicked");
 
-    setTimeout(() => {
+    window.setTimeout(() => {
       floatingContact.classList.remove("clicked");
     }, 220);
+
+    if (target) {
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (history.pushState) {
+        history.pushState(null, "", targetSelector);
+      } else {
+        window.location.hash = targetSelector;
+      }
+    }
   });
 }
