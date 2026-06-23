@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administration — EQUATION B&C</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/logo-equation.ico" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-equation-transparent.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .admin-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .admin-hidden {
+      display: none !important;
+    }
+
+    .admin-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .admin-form input,
+    .admin-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .project-list {
+      margin-top: 40px;
+    }
+
+    .project-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: white;
+    }
+
+    .project-item img {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .project-item-info {
+      flex: 1;
+    }
+
+    .project-item h4 {
+      margin: 0 0 5px 0;
+    }
+
+    .project-item p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .btn-danger {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .logout-btn {
+      float: right;
+    }
+  </style>
+</head>
+
+<body data-page="admin">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="brand-logo brand-logo-wide" />
+      </a>
+    </div>
+  </header>
+
+  <main class="admin-container">
+
+    <!-- LOGIN SECTION -->
+    <div id="login-section" class="card surface-card">
+      <h2>Connexion à l'administration</h2>
+      <p>Veuillez vous connecter avec votre compte Supabase pour gérer vos réalisations.</p>
+      <form id="login-form" class="admin-form">
+        <label>Email</label>
+        <input type="email" id="login-email" required />
+        <label>Mot de passe</label>
+        <input type="password" id="login-password" required />
+        <br><br>
+        <button type="submit" class="btn btn-primary">Se connecter</button>
+      </form>
+      <p id="login-error" style="color:red; margin-top:10px;"></p>
+    </div>
+
+    <!-- ADMIN SECTION -->
+    <div id="admin-section" class="admin-hidden">
+      <button id="logout-btn" class="btn btn-secondary logout-btn">Se déconnecter</button>
+      <h2>Gestion des réalisations</h2>
+      <p>Ajoutez de nouveaux projets pour qu'ils apparaissent sur le site.</p>
+
+      <div class="card surface-card" style="margin-top:20px;">
+        <h3>Ajouter un nouveau projet</h3>
+        <form id="add-project-form" class="admin-form">
+          <label>Titre du projet</label>
+          <input type="text" id="project-title" required placeholder="Ex: Cuisine haut de gamme" />
+
+          <label>Tag (Catégorie)</label>
+          <input type="text" id="project-tag" required placeholder="Ex: Rénovation intérieure" />
+
+          <label>Description courte</label>
+          <textarea id="project-desc" rows="3" required placeholder="Décrivez le projet..."></textarea>
+
+          <div style="margin-top: 15px; display: flex; align-items: center; gap: 10px;">
+            <input type="checkbox" id="project-is-before-after" style="width: auto; margin: 0;" />
+            <label for="project-is-before-after" style="margin: 0;">Ce projet est un "Avant / Après"</label>
+          </div>
+
+          <div id="before-image-group" style="display: none;">
+            <label>Photo "Avant"</label>
+            <input type="file" id="project-image-before" accept="image/*" />
+          </div>
+
+          <label id="main-image-label">Photo du projet</label>
+          <input type="file" id="project-image" accept="image/*" required />
+
+          <br><br>
+          <button type="submit" class="btn btn-primary" id="submit-project-btn">Publier le projet</button>
+          <p id="upload-status" style="margin-top:10px; font-weight:bold;"></p>
+        </form>
+      </div>
+
+      <div class="project-list">
+        <h3>Projets publiés</h3>
+        <div id="projects-container">
+          <p>Chargement des projets...</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Load Supabase JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/supabase-client.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+
+</html>

@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <!-- =========================================
        HEAD / SEO / FAVICON
   ========================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EQUATION B&C — L’exigence technique au service de vos projets</title>
-  <meta
-    name="description"
-    content="Entreprise générale du bâtiment tous corps de métier : électricité, plomberie, climatisation, domotique, peinture, finitions et rénovation."
-  />
+  <title>EQUATION B&C — Électricité, Plomberie & Rénovation au Mesnil-Saint-Denis (78)</title>
+  <meta name="description"
+    content="Entreprise générale du bâtiment tous corps de métier : électricité, plomberie, climatisation, domotique, peinture, finitions et rénovation. Artisans qualifiés au Mesnil-Saint-Denis (78)." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.equation-bc.fr/" />
 
- <link rel="icon" type="image/svg+xml" sizes="48x48" href="logo-equation-icon.svg">
-<link rel="icon" type="image/svg+xml" sizes="96x96" href="logo-equation-icon.svg">
-<link rel="shortcut icon" href="logo-equation-icon.svg">
-<link rel="apple-touch-icon" href="logo-equation-icon.svg">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.equation-bc.fr/" />
+  <meta property="og:title" content="EQUATION B&C — Électricité, Plomberie & Rénovation" />
+  <meta property="og:description"
+    content="Artisans qualifiés en électricité, plomberie, climatisation et rénovation globale au Mesnil-Saint-Denis (78). Devis gratuit." />
+  <meta property="og:image" content="https://www.equation-bc.fr/assets/images/logo-equation-transparent.svg" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "EQUATION B&C",
+    "url": "https://www.equation-bc.fr",
+    "telephone": "+33180281247",
+    "email": "contact@equation-bc.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "45 rue du Fort Manoir",
+      "addressLocality": "Le Mesnil-Saint-Denis",
+      "postalCode": "78320",
+      "addressCountry": "FR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/equation_b_et_c",
+      "https://www.linkedin.com/company/equation-bc/"
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" sizes="48x48" href="assets/images/logo-equation-icon.svg">
+  <link rel="icon" type="image/svg+xml" sizes="96x96" href="assets/images/logo-equation-icon.svg">
+  <link rel="shortcut icon" href="assets/images/logo-equation-icon.svg">
+  <link rel="apple-touch-icon" href="assets/images/logo-equation-icon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body data-page="home">
   <!-- =========================================
        HEADER / NAVIGATION
   ========================================== -->
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-        <img src="logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="brand-logo brand-logo-wide" />
+      <a class="brand" href="#">
+        <img src="assets/images/logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="brand-logo" />
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainMenu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="mainMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -44,37 +78,25 @@
 
       <nav class="menu" id="mainMenu">
         <a class="menu-btn" href="#apropos">À propos</a>
-        <a class="menu-btn" href="#services">Expertises</a>
+        <a class="menu-btn" href="#interactive-house">Nos Expertises</a>
         <a class="menu-btn" href="#methode">Méthode</a>
-        <a class="menu-btn" href="#engagements">Engagements</a>
         <a class="menu-btn" href="#avis">Avis</a>
-        <a class="menu-btn" href="#faq">FAQ</a>
         <a class="menu-btn" href="blog.html" data-page-link="blog">Blog</a>
         <a class="menu-btn menu-btn-primary" href="#contact">Demander un devis</a>
 
-        <a
-          class="social-icon-btn"
-          href="https://www.linkedin.com/company/VOTRE-PAGE-LINKEDIN/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          title="LinkedIn"
-        >
+        <a class="social-icon-btn" href="https://www.linkedin.com/company/equation-bc/" target="_blank"
+          rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.02c0 1.1.92 2.02 2.02 2.02A2.04 2.04 0 0 0 7.28 5 2.04 2.04 0 0 0 5.25 3ZM20.44 12.78c0-3.43-1.83-5.03-4.27-5.03-1.97 0-2.85 1.08-3.35 1.85V8.5H9.44c.04.73 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.92.27-.68.89-1.38 1.93-1.38 1.36 0 1.9 1.03 1.9 2.55V20h3.38v-7.22Z"/>
+            <path
+              d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.02c0 1.1.92 2.02 2.02 2.02A2.04 2.04 0 0 0 7.28 5 2.04 2.04 0 0 0 5.25 3ZM20.44 12.78c0-3.43-1.83-5.03-4.27-5.03-1.97 0-2.85 1.08-3.35 1.85V8.5H9.44c.04.73 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.92.27-.68.89-1.38 1.93-1.38 1.36 0 1.9 1.03 1.9 2.55V20h3.38v-7.22Z" />
           </svg>
         </a>
 
-        <a
-          class="social-icon-btn"
-          href="https://www.instagram.com/equation_b_et_c"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          title="Instagram"
-        >
+        <a class="social-icon-btn" href="https://www.instagram.com/equation_b_et_c" target="_blank"
+          rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"/>
+            <path
+              d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z" />
           </svg>
         </a>
       </nav>
@@ -115,22 +137,26 @@
             <a class="btn btn-secondary" href="blog.html">Voir nos réalisations</a>
           </div>
 
-          <div class="hero-badges">
-            <span>Électricité</span>
-            <span>Plomberie</span>
-            <span>Climatisation</span>
-            <span>Peinture</span>
-            <span>Finitions</span>
-            <span>Domotique</span>
+          <div class="trust-badges">
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Garantie Décennale</span>
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <span>Bureau d'études intégré</span>
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              <span>Interlocuteur Unique</span>
+            </div>
           </div>
         </div>
 
         <div class="hero-visual reveal">
           <div class="visual-card visual-card-main">
-            <img
-              src="WhatsApp Image 2026-03-13 at 15.27.28.jpeg"
-              alt="Cuisine moderne et design"
-            />
+            <img src="assets/images/WhatsApp Image 2026-03-13 at 15.27.28.jpeg" alt="Cuisine moderne réalisée par EQUATION B&C"
+              loading="eager" fetchpriority="high" />
             <div class="visual-overlay">
               <span>Réalisation</span>
               <h3>Cuisine moderne et design</h3>
@@ -139,10 +165,8 @@
 
           <div class="visual-stack">
             <div class="visual-card">
-              <img
-                src="WhatsApp Image 2026-03-13 at 15.27.27.jpeg"
-                alt="Éclairage LED et finitions"
-              />
+              <img src="assets/images/WhatsApp Image 2026-03-13 at 15.27.27.jpeg" alt="Éclairage LED et finitions soignées"
+                loading="lazy" />
               <div class="visual-overlay">
                 <span>Finitions</span>
                 <h3>Éclairage LED soigné</h3>
@@ -150,40 +174,14 @@
             </div>
 
             <div class="visual-card">
-              <img
-                src="WhatsApp Image 2026-03-13 at 15.27.29.jpeg"
-                alt="Salle de bain moderne"
-              />
+              <img src="assets/images/WhatsApp Image 2026-03-13 at 15.27.29.jpeg" alt="Salle de bain moderne rénovée"
+                loading="lazy" />
               <div class="visual-overlay">
                 <span>Aménagement</span>
                 <h3>Rendu propre et premium</h3>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================
-         CHIFFRES CLES
-    ========================================== -->
-    <section class="stats-strip">
-      <div class="container stats-strip-grid reveal">
-        <div class="stats-item">
-          <strong>20+ ans</strong>
-          <span>D’expérience métier</span>
-        </div>
-        <div class="stats-item">
-          <strong>2 expertises fondatrices</strong>
-          <span>Électricité &amp; plomberie</span>
-        </div>
-        <div class="stats-item">
-          <strong>Tous corps d’état</strong>
-          <span>Une prise en charge globale</span>
-        </div>
-        <div class="stats-item">
-          <strong>Sur mesure</strong>
-          <span>Pour particuliers et professionnels</span>
         </div>
       </div>
     </section>
@@ -199,60 +197,86 @@
         </div>
 
         <div class="section-copy reveal card surface-card">
-          <p>EQUATION B&C est née de la rencontre de deux professionnels passionnés: 
+          <p>EQUATION B&C est née de la rencontre de deux professionnels passionnés:
             Clément, spécialiste de l’électricité, et Bucci, expert en plomberie.
           </p>
           <p>Après plus de vingt années d’expérience chacun dans leurs domaines respectifs,
-             ils ont choisi d’unir leurs compétences pour proposer une approche globale 
-             des travaux techniques et de la rénovation.
+            ils ont choisi d’unir leurs compétences pour proposer une approche globale
+            des travaux techniques et de la rénovation.
           </p>
           <p>
             Nous accompagnons nos clients sur des projets techniques et esthétiques,
-            en intervenant sur tout ou partie du chantier selon les besoins.
+            en intervenant sur tout ou partie du chantier selon les besoins. Notre force repose sur la coordination, la
+            rigueur d’exécution et la capacité à piloter plusieurs métiers avec une même exigence de qualité.
           </p>
-          <p>
-            Notre force repose sur la coordination, la rigueur d’exécution et la capacité à piloter
-            plusieurs métiers avec une même exigence de qualité.
-          </p>
+
+          <div class="stats-inline">
+            <div class="stat-mini">
+              <strong>20+ ans</strong>
+              <span>d’expérience</span>
+            </div>
+            <div class="stat-mini">
+              <strong>2 experts</strong>
+              <span>Élec &amp; plomberie</span>
+            </div>
+            <div class="stat-mini">
+              <strong>1 interlocuteur</strong>
+              <span>Prise en charge globale</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- =========================================
-         SERVICES
+         EXPERTISES INTERACTIVES (MAISON + DETAILS)
     ========================================== -->
-    <section class="section section-alt" id="services">
+    <section class="section" id="expertises-interactives">
       <div class="container">
         <div class="section-head center reveal">
-          <p class="eyebrow">Expertises</p>
-          <h2>Des prestations techniques complètes et cohérentes.</h2>
+          <p class="eyebrow">Nos Expertises</p>
+          <h2>Une approche globale, du sol au plafond.</h2>
         </div>
 
-        <div class="service-grid">
-          <article class="service-card card reveal">
-            <h3>Électricité</h3>
-            <p>Installation, remise aux normes, éclairage, tableaux électriques et solutions sur mesure.</p>
-          </article>
-          <article class="service-card card reveal">
-            <h3>Plomberie</h3>
-            <p>Distribution, évacuation, sanitaires, cuisine, salle de bain et réseaux techniques.</p>
-          </article>
-          <article class="service-card card reveal">
-            <h3>Climatisation</h3>
-            <p>Confort thermique, intégration propre, optimisation des performances et durabilité.</p>
-          </article>
-          <article class="service-card card reveal">
-            <h3>Peinture &amp; finitions</h3>
-            <p>Préparation des supports, finitions soignées, harmonie visuelle et rendu premium.</p>
-          </article>
-          <article class="service-card card reveal">
-            <h3>Domotique &amp; sécurité</h3>
-            <p>Automatisation, pilotage intelligent, équipements connectés et sécurisation des espaces.</p>
-          </article>
-          <article class="service-card card reveal">
-            <h3>Rénovation globale</h3>
-            <p>Coordination de l’ensemble des interventions avec un interlocuteur unique.</p>
-          </article>
+        <!-- Conteneur global du split -->
+        <div class="split-container reveal">
+          <!-- Partie gauche : Image + Hotspots -->
+          <div class="interactive-image-wrapper">
+            <img src="assets/images/modern_house_cross_section.png" alt="Coupe isométrique d'une maison moderne" class="interactive-house-img" />
+            
+            <div class="hotspot" style="top: 30%; left: 35%;" data-title="Électricité"
+              data-desc="Tableaux, éclairage, normes NF C 15-100. Nous sécurisons et modernisons vos installations avec des équipements de pointe.">
+              <div class="hotspot-dot"></div>
+            </div>
+            <div class="hotspot" style="top: 50%; left: 70%;" data-title="Plomberie"
+              data-desc="Sanitaires, évacuation, alimentation. Des réseaux fiables et durables conçus pour votre confort quotidien.">
+              <div class="hotspot-dot"></div>
+            </div>
+            <div class="hotspot" style="top: 15%; left: 60%;" data-title="Climatisation"
+              data-desc="PAC, split, intégration soignée. Un confort thermique optimal toute l'année, été comme hiver.">
+              <div class="hotspot-dot"></div>
+            </div>
+            <div class="hotspot" style="top: 60%; left: 25%;" data-title="Peinture"
+              data-desc="Enduits, finitions premium. Des revêtements soignés et harmonieux pour un rendu exceptionnel.">
+              <div class="hotspot-dot"></div>
+            </div>
+            <div class="hotspot" style="top: 80%; left: 50%;" data-title="Domotique"
+              data-desc="Sécurité, alarmes, maison connectée. Pilotez vos espaces à distance pour plus de tranquillité.">
+              <div class="hotspot-dot"></div>
+            </div>
+            <div class="hotspot" style="top: 45%; left: 50%;" data-title="Rénovation globale"
+              data-desc="Conception, coordination, livraison. Un interlocuteur unique pour coordonner l'ensemble de vos travaux.">
+              <div class="hotspot-dot"></div>
+            </div>
+          </div>
+
+          <!-- Colonne Droite: Le Texte -->
+          <div class="house-details-panel">
+            <div class="house-details-content" id="house-details-content">
+              <h3>EQUATION B&amp;C</h3>
+              <p>Survolez les points lumineux sur la maison pour plus de détails sur nos expertises.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -260,7 +284,7 @@
     <!-- =========================================
          METHODE
     ========================================== -->
-    <section class="section" id="methode">
+    <section class="section section-alt" id="methode">
       <div class="container">
         <div class="section-head center reveal">
           <p class="eyebrow">Méthode</p>
@@ -269,51 +293,26 @@
 
         <div class="timeline-grid">
           <article class="timeline-card card reveal">
-            <span>Analyse</span>
+            <span>1 — Analyse</span>
             <p>Étude du besoin, contraintes, budget, environnement et priorités du projet.</p>
           </article>
           <article class="timeline-card card reveal">
-            <span>Préparation</span>
+            <span>2 — Préparation</span>
             <p>Organisation du chantier, coordination des corps de métier et planification des étapes.</p>
           </article>
           <article class="timeline-card card reveal">
-            <span>Réalisation</span>
-            <p>Exécution rigoureuse, suivi d’avancement, finitions et contrôle qualité.</p>
+            <span>3 — Réalisation</span>
+            <p>Exécution rigoureuse, suivi d'avancement, finitions et contrôle qualité.</p>
           </article>
           <article class="timeline-card card reveal">
-            <span>Livraison</span>
-            <p>Validation finale, échanges de clôture et accompagnement jusqu’à la mise en service.</p>
+            <span>4 — Livraison</span>
+            <p>Validation finale, échanges de clôture et accompagnement jusqu'à la mise en service.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- =========================================
-         ENGAGEMENTS
-    ========================================== -->
-    <section class="section section-alt" id="engagements">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">Engagements</p>
-          <h2>Une exigence constante sur le fond comme sur la forme.</h2>
-        </div>
-
-        <div class="engagement-grid">
-          <article class="engagement-card card reveal">
-            <h3>Interlocuteur unique</h3>
-            <p>Un pilotage simplifié pour une communication fluide à chaque étape.</p>
-          </article>
-          <article class="engagement-card card reveal">
-            <h3>Qualité d’exécution</h3>
-            <p>Des prestations propres, durables et conformes aux attentes du chantier.</p>
-          </article>
-          <article class="engagement-card card reveal">
-            <h3>Respect des délais</h3>
-            <p>Une organisation structurée pour limiter les imprévus et sécuriser l’avancement.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <!-- Engagements retirés pour un site plus épuré -->
 
     <!-- =========================================
          BLOG APERCU
@@ -325,21 +324,8 @@
           <h2>Découvrez un aperçu de nos projets récents.</h2>
         </div>
 
-        <div class="blog-preview-grid">
-          <article class="blog-preview-card card reveal">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Suite parentale rénovée" />
-            <div>
-              <h3>Suite parentale rénovée</h3>
-              <p>Création d’un espace élégant avec reprise des réseaux, éclairage intégré et finitions sur mesure.</p>
-            </div>
-          </article>
-          <article class="blog-preview-card card reveal">
-            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Cuisine haut de gamme" />
-            <div>
-              <h3>Cuisine haut de gamme</h3>
-              <p>Coordination complète des travaux techniques et décoratifs pour un rendu contemporain.</p>
-            </div>
-          </article>
+        <div class="blog-preview-grid" id="home-projects-container">
+          <p>Chargement des réalisations...</p>
         </div>
 
         <div class="section-cta reveal center-cta">
@@ -358,74 +344,27 @@
             <p class="eyebrow">Présence en ligne</p>
             <h2>Retrouvez EQUATION B&amp;C sur les réseaux et les plateformes d’avis.</h2>
             <div class="social-actions">
-              <a class="btn btn-linkedin" href="https://www.linkedin.com/company/VOTRE-PAGE-LINKEDIN/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a class="btn btn-instagram" href="https://www.instagram.com/equation_b_et_c" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a class="btn btn-linkedin" href="https://www.linkedin.com/company/equation-bc/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn btn-instagram" href="https://www.instagram.com/equation_b_et_c" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
             </div>
           </div>
 
-          <div class="trust-box-placeholder">
-            <p class="tp-title">Avis clients</p>
+          <div class="trust-box-clean">
+            <p class="tp-title">Votre avis compte pour nous</p>
             <p>
-              Ajoutez ici votre widget Trustpilot ou les avis recueillis pour renforcer la confiance.
+              La satisfaction de nos clients est notre meilleure carte de visite. Partagez votre expérience avec
+              EQUATION B&C !
             </p>
-            <a href="https://fr.trustpilot.com/review/VOTRE-PAGE-TRUSTPILOT" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Voir les avis</a>
+            <a href="https://fr.trustpilot.com/review/equation-bc.fr" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary">Découvrir nos avis / Laisser un avis</a>
           </div>
-          <a class="btn btn-secondary" href="https://fr.trustpilot.com/review/equation-bc.fr" target="_blank" rel="noopener noreferrer">
-            Voir nos avis
-          </a>
-
-          <a class="btn btn-primary" href="https://fr.trustpilot.com/review/equation-bc.fr" target="_blank" rel="noopener noreferrer">
-                Laisser un avis
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- =========================================
-         FAQ
-    ========================================== -->
-    <section class="section section-alt" id="faq">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">FAQ</p>
-          <h2>Questions fréquentes</h2>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item card reveal">
-            <summary>Intervenez-vous sur des projets complets ?</summary>
-            <p>
-              Oui, nous proposons une approche globale des travaux techniques et d’aménagement,
-              avec coordination entre les différents corps de métier.
-            </p>
-          </details>
-
-          <details class="faq-item card reveal">
-            <summary>Travaillez-vous pour les particuliers et les professionnels ?</summary>
-            <p>
-              Oui, avec des prestations haut de gamme pour les particuliers
-              et des solutions clé en main pour les professionnels.
-            </p>
-          </details>
-
-          <details class="faq-item card reveal">
-            <summary>Pouvez-vous intervenir uniquement sur une partie du chantier ?</summary>
-            <p>
-              Oui. Nous pouvons intervenir sur une prestation ciblée comme l’électricité,
-              la plomberie, la peinture ou les finitions, selon le besoin.
-            </p>
-          </details>
-
-          <details class="faq-item card reveal">
-            <summary>Comment se passe la demande de devis ?</summary>
-            <p>
-              Vous remplissez le formulaire, nous analysons votre besoin puis nous revenons vers vous
-              pour un premier échange, un rendez-vous ou une proposition.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
+    <!-- FAQ retiré -->
 
     <!-- =========================================
          CONTACT
@@ -442,7 +381,7 @@
 
           <ul class="contact-list">
             <li><strong>Adresse :</strong> 45 rue du Fort Manoir, 78320 Le Mesnil-Saint-Denis</li>
-            <li><strong>Téléphone :</strong> 01 80 28 12 47</li>
+            <li><strong>Téléphone :</strong> <a href="tel:+33180281247">01 80 28 12 47</a></li>
             <li><strong>Email :</strong> <a href="mailto:contact@equation-bc.fr">contact@equation-bc.fr</a></li>
           </ul>
 
@@ -455,15 +394,8 @@
           </div>
         </div>
 
-        <form
-          class="contact-form card reveal"
-          id="contact-formulaire"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="merci.html"
-        >
+        <form class="contact-form card reveal" id="contact-formulaire" name="contact" method="POST" data-netlify="true"
+          netlify-honeypot="bot-field" action="merci.html">
           <input type="hidden" name="form-name" value="contact" />
 
           <p class="hidden">
@@ -509,12 +441,9 @@
 
           <label class="full">
             <span>Description du besoin</span>
-            <textarea
-              name="message"
-              rows="6"
+            <textarea name="message" rows="6"
               placeholder="Décrivez votre projet, les travaux souhaités, les contraintes éventuelles et le niveau de finition recherché..."
-              required
-            ></textarea>
+              required></textarea>
           </label>
 
           <label class="checkbox full">
@@ -545,14 +474,39 @@
           </div>
 
           <div class="map-frame">
-            <iframe
-              title="Carte Google Maps EQUATION B&C"
+            <iframe title="Carte Google Maps EQUATION B&C"
               src="https://www.google.com/maps?q=45%20rue%20du%20Fort%20Manoir%2078320%20Le%20Mesnil-Saint-Denis&z=15&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         AVIS CLIENTS (TRUSTPILOT)
+    ========================================== -->
+    <section class="trustpilot-section" id="avis-clients">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Avis Clients</p>
+          <h2>Ils nous ont fait confiance.</h2>
+        </div>
+
+        <!-- ZONE RESERVEE AU WIDGET TRUSTPILOT -->
+        <div class="trustpilot-placeholder reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <h3>Vos avis Trustpilot apparaîtront ici</h3>
+          <p>Dès que vous aurez votre compte Trustpilot, vous pourrez coller votre code d'intégration (Widget) à cet emplacement précis pour afficher automatiquement vos derniers avis clients.</p>
+          
+          <!-- Exemple de code d'intégration Trustpilot : 
+          <div class="trustpilot-widget" data-locale="fr-FR" data-template-id="xxx" data-businessunit-id="xxx" data-style-height="130px" data-style-width="100%" data-theme="light">
+            <a href="https://fr.trustpilot.com/review/votre-domaine.com" target="_blank" rel="noopener">Trustpilot</a>
+          </div> 
+          -->
+        </div>
+
       </div>
     </section>
   </main>
@@ -562,8 +516,9 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <img src="logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="footer-logo footer-logo-wide" />
-        <span>© 2026 EQUATION B&amp;C — Tous droits réservés</span>
+        <img src="assets/images/logo-equation-transparent.svg" alt="Logo EQUATION B&C" class="footer-logo footer-logo-wide" />
+        <span>© 2026 EQUATION B&amp;C — Tous droits réservés <a href="admin.html"
+            style="text-decoration:none; opacity:0.3; margin-left:10px; color:inherit;">Admin</a></span>
       </div>
 
       <div class="footer-links">
@@ -571,11 +526,14 @@
         <a href="politique-confidentialite.html">Politique de confidentialité</a>
         <a href="mailto:contact@equation-bc.fr">contact@equation-bc.fr</a>
         <a href="https://www.instagram.com/equation_b_et_c" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.linkedin.com/company/VOTRE-PAGE-LINKEDIN/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/company/equation-bc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/supabase-client.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
