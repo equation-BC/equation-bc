@@ -122,7 +122,7 @@
       <p>Ajoutez de nouveaux projets pour qu'ils apparaissent sur le site.</p>
 
       <div class="card surface-card" style="margin-top:20px;">
-        <h3>Ajouter un nouveau projet</h3>
+        <h3 id="form-title">Ajouter un nouveau projet</h3>
         <form id="add-project-form" class="admin-form">
           <label>Titre du projet</label>
           <input type="text" id="project-title" required placeholder="Ex: Cuisine haut de gamme" />
@@ -154,10 +154,14 @@
           </div>
 
           <label id="main-image-label">Photo du projet</label>
-          <input type="file" id="project-image" accept="image/*" required />
+          <input type="file" id="project-image" accept="image/*" />
+          <small id="image-edit-hint" style="display:none; color:#666;">Laissez vide pour conserver l'image actuelle.</small>
 
           <br><br>
-          <button type="submit" class="btn btn-primary" id="submit-project-btn">Publier le projet</button>
+          <div style="display: flex; gap: 10px;">
+            <button type="submit" class="btn btn-primary" id="submit-project-btn">Publier le projet</button>
+            <button type="button" class="btn btn-secondary admin-hidden" id="cancel-edit-btn" style="display: none;">Annuler</button>
+          </div>
           <p id="upload-status" style="margin-top:10px; font-weight:bold;"></p>
         </form>
       </div>

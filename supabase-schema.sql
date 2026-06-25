@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS public.projects (
     image_url TEXT NOT NULL,
     is_before_after BOOLEAN DEFAULT false,
     image_before_url TEXT,
+    is_featured BOOLEAN DEFAULT false,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
 

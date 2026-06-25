@@ -198,11 +198,11 @@ async function fetchProjects() {
   if (!homeContainer && !blogContainer) return;
 
   try {
-    // Si on est sur l'accueil, on limite à 2 projets (les plus récents)
+    // Si on est sur l'accueil, on affiche uniquement les projets mis en avant
     let query = supabaseClient.from('projects').select('*').order('created_at', { ascending: false });
 
     if (homeContainer) {
-      query = query.limit(2);
+      query = query.eq('is_featured', true);
     }
 
     const { data, error } = await query;
