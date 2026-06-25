@@ -227,7 +227,7 @@ async function fetchProjects() {
       return projectsToRender.map(project => {
         let imageHtml = `<img src="${esc(project.image_url)}" alt="${esc(project.title)}" loading="lazy" />`;
         
-        if (project.is_before_after && project.image_before_url) {
+        if (project.is_before_after && project.image_before_url && blogContainer) {
           imageHtml = `
             <div class="before-after-wrapper" style="--slider-pos: 50%;">
               <div class="before-after-container">
