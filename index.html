@@ -19,7 +19,7 @@
   <meta property="og:title" content="EQUATION B&C — Électricité, Plomberie & Rénovation" />
   <meta property="og:description"
     content="Artisans qualifiés en électricité, plomberie, climatisation et rénovation globale au Mesnil-Saint-Denis (78). Devis gratuit." />
-  <meta property="og:image" content="https://www.equation-bc.fr/assets/images/logo-equation-transparent.svg" />
+  <meta property="og:image" content="https://www.equation-bc.fr/assets/images/logo-equation-transparent.png" />
   <meta property="og:locale" content="fr_FR" />
 
   <!-- Schema.org LocalBusiness -->
@@ -77,28 +77,26 @@
       </button>
 
       <nav class="menu" id="mainMenu">
-        <a class="menu-btn" href="#apropos">À propos</a>
-        <a class="menu-btn" href="#interactive-house">Nos Expertises</a>
-        <a class="menu-btn" href="#methode">Méthode</a>
-        <a class="menu-btn" href="#avis">Avis</a>
-        <a class="menu-btn" href="blog.html" data-page-link="blog">Blog</a>
-        <a class="menu-btn menu-btn-primary" href="#contact">Demander un devis</a>
+        <div class="dropdown">
+          <button class="menu-btn dropdown-toggle">Navigation ▾</button>
+          <div class="dropdown-menu">
+            <a href="#apropos">À propos</a>
+            <a href="#expertises-interactives">Expertises</a>
+            <a href="#methode">Méthode</a>
+            <a href="#avis-clients">Avis Clients</a>
+          </div>
+        </div>
 
-        <a class="social-icon-btn" href="https://www.linkedin.com/company/equation-bc/" target="_blank"
-          rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.02c0 1.1.92 2.02 2.02 2.02A2.04 2.04 0 0 0 7.28 5 2.04 2.04 0 0 0 5.25 3ZM20.44 12.78c0-3.43-1.83-5.03-4.27-5.03-1.97 0-2.85 1.08-3.35 1.85V8.5H9.44c.04.73 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.12-.92.27-.68.89-1.38 1.93-1.38 1.36 0 1.9 1.03 1.9 2.55V20h3.38v-7.22Z" />
-          </svg>
-        </a>
+        <div class="dropdown">
+          <button class="menu-btn dropdown-toggle">En savoir plus ▾</button>
+          <div class="dropdown-menu">
+            <a href="blog.html">Blog</a>
+            <a href="politique-confidentialite.html">Confidentialité</a>
+          </div>
+        </div>
 
-        <a class="social-icon-btn" href="https://www.instagram.com/equation_b_et_c" target="_blank"
-          rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z" />
-          </svg>
-        </a>
+        <a class="menu-btn menu-btn-login" href="admin.html">Connexion</a>
+        <a class="menu-btn menu-btn-primary" href="#contact">Obtenir un devis</a>
       </nav>
     </div>
   </header>
@@ -155,7 +153,7 @@
 
         <div class="hero-visual reveal">
           <div class="visual-card visual-card-main">
-            <img src="assets/images/WhatsApp Image 2026-03-13 at 15.27.28.jpeg" alt="Cuisine moderne réalisée par EQUATION B&C"
+            <img src="assets/images/enhanced_kitchen.webp" alt="Cuisine moderne réalisée par EQUATION B&C"
               loading="eager" fetchpriority="high" />
             <div class="visual-overlay">
               <span>Réalisation</span>
@@ -165,7 +163,7 @@
 
           <div class="visual-stack">
             <div class="visual-card">
-              <img src="assets/images/WhatsApp Image 2026-03-13 at 15.27.27.jpeg" alt="Éclairage LED et finitions soignées"
+              <img src="assets/images/enhanced_bathroom.webp" alt="Éclairage LED et finitions soignées"
                 loading="lazy" />
               <div class="visual-overlay">
                 <span>Finitions</span>
@@ -174,7 +172,7 @@
             </div>
 
             <div class="visual-card">
-              <img src="assets/images/WhatsApp Image 2026-03-13 at 15.27.29.jpeg" alt="Salle de bain moderne rénovée"
+              <img src="assets/images/enhanced_interior.webp" alt="Salle de bain moderne rénovée"
                 loading="lazy" />
               <div class="visual-overlay">
                 <span>Aménagement</span>
@@ -190,38 +188,84 @@
          A PROPOS
     ========================================== -->
     <section class="section" id="apropos">
-      <div class="container split-section">
-        <div class="section-head reveal">
+      <div class="container split-section-new">
+        <!-- Colonne Gauche -->
+        <div class="about-left reveal">
           <p class="eyebrow">À propos</p>
           <h2>Une coordination fiable pour des chantiers maîtrisés.</h2>
+          
+          <div class="about-text-content">
+            <p>EQUATION B&C est née de la rencontre de deux professionnels passionnés :
+              Clément, spécialiste de l’électricité, et Bucci, expert en plomberie.
+            </p>
+            <p>Après plus de vingt années d’expérience chacun dans leurs domaines respectifs,
+              ils ont choisi d’unir leurs compétences pour proposer une approche globale
+              des travaux techniques et de la rénovation.
+            </p>
+            <p>
+              Nous accompagnons nos clients sur des projets techniques et esthétiques,
+              en intervenant sur tout ou partie du chantier selon les besoins. Notre force repose sur la coordination, la
+              rigueur d’exécution et la capacité à piloter plusieurs métiers avec une même exigence de qualité.
+            </p>
+          </div>
         </div>
 
-        <div class="section-copy reveal card surface-card">
-          <p>EQUATION B&C est née de la rencontre de deux professionnels passionnés:
-            Clément, spécialiste de l’électricité, et Bucci, expert en plomberie.
-          </p>
-          <p>Après plus de vingt années d’expérience chacun dans leurs domaines respectifs,
-            ils ont choisi d’unir leurs compétences pour proposer une approche globale
-            des travaux techniques et de la rénovation.
-          </p>
-          <p>
-            Nous accompagnons nos clients sur des projets techniques et esthétiques,
-            en intervenant sur tout ou partie du chantier selon les besoins. Notre force repose sur la coordination, la
-            rigueur d’exécution et la capacité à piloter plusieurs métiers avec une même exigence de qualité.
-          </p>
+        <!-- Colonne Droite (Stats) -->
+        <div class="about-right reveal">
+          <div class="stats-grid-new">
+            <div class="stat-card-new">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <strong>20+ ans</strong>
+                <span>D'expérience</span>
+              </div>
+            </div>
 
-          <div class="stats-inline">
-            <div class="stat-mini">
-              <strong>20+ ans</strong>
-              <span>d’expérience</span>
+            <div class="stat-card-new">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <strong>2 experts</strong>
+                <span>Élec &amp; plomberie</span>
+              </div>
             </div>
-            <div class="stat-mini">
-              <strong>2 experts</strong>
-              <span>Élec &amp; plomberie</span>
+
+            <div class="stat-card-new">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <strong>1 unique</strong>
+                <span>Interlocuteur dédié</span>
+              </div>
             </div>
-            <div class="stat-mini">
-              <strong>1 interlocuteur</strong>
-              <span>Prise en charge globale</span>
+
+            <div class="stat-card-new">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <strong>100%</strong>
+                <span>Clients satisfaits</span>
+              </div>
             </div>
           </div>
         </div>
@@ -242,7 +286,7 @@
         <div class="split-container reveal">
           <!-- Partie gauche : Image + Hotspots -->
           <div class="interactive-image-wrapper">
-            <img src="assets/images/modern_house_cross_section.png" alt="Coupe isométrique d'une maison moderne" class="interactive-house-img" />
+            <img src="assets/images/modern_house_cross_section.webp" alt="Coupe isométrique d'une maison moderne" class="interactive-house-img" />
             
             <div class="hotspot" style="top: 30%; left: 35%;" data-title="Électricité"
               data-desc="Tableaux, éclairage, normes NF C 15-100. Nous sécurisons et modernisons vos installations avec des équipements de pointe.">
@@ -282,6 +326,36 @@
     </section>
 
     <!-- =========================================
+         GALERIE PHOTO EN DÉCALÉ
+    ========================================== -->
+    <section class="section offset-gallery-section" id="galerie-decalee">
+      <div class="container">
+        <div class="offset-collage-grid">
+          <!-- Photo 1: Escaliers -->
+          <div class="collage-item collage-item-1 reveal">
+            <img src="assets/images/luxury_stairs.webp" alt="Escalier moderne suspendu avec LED" loading="lazy" />
+          </div>
+          <!-- Photo 2: Cuisine -->
+          <div class="collage-item collage-item-2 reveal">
+            <img src="assets/images/enhanced_kitchen.webp" alt="Cuisine premium réalisée par EQUATION B&C" loading="lazy" />
+          </div>
+          <!-- Photo 3: Salon -->
+          <div class="collage-item collage-item-3 reveal">
+            <img src="assets/images/luxury_living_room.webp" alt="Salon haut de gamme avec boiseries" loading="lazy" />
+          </div>
+          <!-- Photo 4: Salle de bain LED -->
+          <div class="collage-item collage-item-4 reveal">
+            <img src="assets/images/enhanced_bathroom.webp" alt="Finitions LED et salle de bain" loading="lazy" />
+          </div>
+          <!-- Photo 5: Salle de bain baignoire -->
+          <div class="collage-item collage-item-5 reveal">
+            <img src="assets/images/enhanced_interior.webp" alt="Baignoire moderne" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
          METHODE
     ========================================== -->
     <section class="section section-alt" id="methode">
@@ -293,19 +367,45 @@
 
         <div class="timeline-grid">
           <article class="timeline-card card reveal">
-            <span>1 — Analyse</span>
+            <div class="methode-icon-wrapper">
+              <svg class="methode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <span>ANALYSE</span>
             <p>Étude du besoin, contraintes, budget, environnement et priorités du projet.</p>
           </article>
           <article class="timeline-card card reveal">
-            <span>2 — Préparation</span>
+            <div class="methode-icon-wrapper">
+              <svg class="methode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <span>PRÉPARATION</span>
             <p>Organisation du chantier, coordination des corps de métier et planification des étapes.</p>
           </article>
           <article class="timeline-card card reveal">
-            <span>3 — Réalisation</span>
+            <div class="methode-icon-wrapper">
+              <svg class="methode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <span>RÉALISATION</span>
             <p>Exécution rigoureuse, suivi d'avancement, finitions et contrôle qualité.</p>
           </article>
           <article class="timeline-card card reveal">
-            <span>4 — Livraison</span>
+            <div class="methode-icon-wrapper">
+              <svg class="methode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 11 11 13 15 9"></polyline>
+              </svg>
+            </div>
+            <span>LIVRAISON</span>
             <p>Validation finale, échanges de clôture et accompagnement jusqu'à la mise en service.</p>
           </article>
         </div>
@@ -367,33 +467,38 @@
     <!-- FAQ retiré -->
 
     <!-- =========================================
-         CONTACT
+         AVIS CLIENTS (TRUSTPILOT)
     ========================================== -->
-    <section class="section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-card card reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Parlons de votre projet.</h2>
-          <p>
-            Notre engagement est simple : concevoir et réaliser des installations fiables,
-            durables et parfaitement adaptées à votre environnement.
-          </p>
-
-          <ul class="contact-list">
-            <li><strong>Adresse :</strong> 45 rue du Fort Manoir, 78320 Le Mesnil-Saint-Denis</li>
-            <li><strong>Téléphone :</strong> <a href="tel:+33180281247">01 80 28 12 47</a></li>
-            <li><strong>Email :</strong> <a href="mailto:contact@equation-bc.fr">contact@equation-bc.fr</a></li>
-          </ul>
-
-          <div class="contact-note">
-            <strong>Un interlocuteur unique</strong>
-            <p>
-              Nous assurons une coordination efficace des interventions, une maîtrise des délais
-              et une communication claire tout au long du chantier.
-            </p>
-          </div>
+    <section class="trustpilot-section" id="avis-clients">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Avis Clients</p>
+          <h2>Ils nous ont fait confiance.</h2>
         </div>
 
+        <!-- ZONE RESERVEE AU WIDGET TRUSTPILOT -->
+        <div class="trustpilot-placeholder reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <h3>Vos avis Trustpilot apparaîtront ici</h3>
+          <p>Dès que vous aurez votre compte Trustpilot, vous pourrez coller votre code d'intégration (Widget) à cet emplacement précis pour afficher automatiquement vos derniers avis clients.</p>
+          
+          <!-- Exemple de code d'intégration Trustpilot : 
+          <div class="trustpilot-widget" data-locale="fr-FR" data-template-id="xxx" data-businessunit-id="xxx" data-style-height="130px" data-style-width="100%" data-theme="light">
+            <a href="https://fr.trustpilot.com/review/votre-domaine.com" target="_blank" rel="noopener">Trustpilot</a>
+          </div> 
+          -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT & LOCALISATION
+    ========================================== -->
+    <section class="section section-dark-footer" id="contact">
+      <div class="container contact-grid">
         <form class="contact-form card reveal" id="contact-formulaire" name="contact" method="POST" data-netlify="true"
           netlify-honeypot="bot-field" action="merci.html">
           <input type="hidden" name="form-name" value="contact" />
@@ -405,15 +510,19 @@
             </label>
           </p>
 
-          <label>
-            <span>Prénom</span>
-            <input type="text" name="firstname" placeholder="Votre prénom" required />
-          </label>
+          <h3>CONTACTEZ-NOUS</h3>
 
-          <label>
-            <span>Nom</span>
-            <input type="text" name="lastname" placeholder="Votre nom" required />
-          </label>
+          <div class="form-row-half">
+            <label>
+              <span>Prénom</span>
+              <input type="text" name="firstname" placeholder="Votre prénom" required />
+            </label>
+
+            <label>
+              <span>Nom</span>
+              <input type="text" name="lastname" placeholder="Votre nom" required />
+            </label>
+          </div>
 
           <label class="full">
             <span>Email</span>
@@ -441,39 +550,44 @@
 
           <label class="full">
             <span>Description du besoin</span>
-            <textarea name="message" rows="6"
-              placeholder="Décrivez votre projet, les travaux souhaités, les contraintes éventuelles et le niveau de finition recherché..."
+            <textarea name="message" rows="4"
+              placeholder="Décrivez votre projet, les travaux souhaités..."
               required></textarea>
           </label>
 
           <label class="checkbox full">
             <input type="checkbox" name="privacy" required />
             <span>
-              J’accepte que mes données soient utilisées uniquement pour être recontacté
-              au sujet de ma demande de devis.
+              J’accepte que mes données soient utilisées uniquement pour être recontacté.
               <a href="politique-confidentialite.html" target="_blank" rel="noopener noreferrer">
                 Politique de confidentialité
               </a>
             </span>
           </label>
 
-          <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+          <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
         </form>
-      </div>
-    </section>
 
-    <!-- =========================================
-         LOCALISATION
-    ========================================== -->
-    <section class="section">
-      <div class="container">
-        <div class="map-card card reveal">
-          <div class="map-head">
-            <p class="eyebrow">Localisation</p>
-            <h2>Retrouvez-nous au Mesnil-Saint-Denis.</h2>
+        <div class="contact-info-map-card card reveal">
+          <div class="info-side">
+            <h3>EQUATION B&C</h3>
+            <ul class="contact-list-new">
+              <li>
+                <strong>Adresse</strong>
+                <span>45 rue du Fort Manoir,<br>78320 Le Mesnil-Saint-Denis</span>
+              </li>
+              <li>
+                <strong>Téléphone</strong>
+                <span><a href="tel:+33180281247">01 80 28 12 47</a></span>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <span><a href="mailto:contact@equation-bc.fr">contact@equation-bc.fr</a></span>
+              </li>
+            </ul>
           </div>
 
-          <div class="map-frame">
+          <div class="map-side">
             <iframe title="Carte Google Maps EQUATION B&C"
               src="https://www.google.com/maps?q=45%20rue%20du%20Fort%20Manoir%2078320%20Le%20Mesnil-Saint-Denis&z=15&output=embed"
               loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -481,37 +595,14 @@
         </div>
       </div>
     </section>
-
-    <!-- =========================================
-         AVIS CLIENTS (TRUSTPILOT)
-    ========================================== -->
-    <section class="trustpilot-section" id="avis-clients">
-      <div class="container">
-        <div class="section-head center reveal">
-          <p class="eyebrow">Avis Clients</p>
-          <h2>Ils nous ont fait confiance.</h2>
-        </div>
-
-        <!-- ZONE RESERVEE AU WIDGET TRUSTPILOT -->
-        <div class="trustpilot-placeholder reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-          </svg>
-          <h3>Vos avis Trustpilot apparaîtront ici</h3>
-          <p>Dès que vous aurez votre compte Trustpilot, vous pourrez coller votre code d'intégration (Widget) à cet emplacement précis pour afficher automatiquement vos derniers avis clients.</p>
-          
-          <!-- Exemple de code d'intégration Trustpilot : 
-          <div class="trustpilot-widget" data-locale="fr-FR" data-template-id="xxx" data-businessunit-id="xxx" data-style-height="130px" data-style-width="100%" data-theme="light">
-            <a href="https://fr.trustpilot.com/review/votre-domaine.com" target="_blank" rel="noopener">Trustpilot</a>
-          </div> 
-          -->
-        </div>
-
-      </div>
-    </section>
   </main>
 
-  <a href="#contact" class="floating-contact" aria-label="Aller au formulaire de contact">Nous contacter</a>
+  <a href="#contact" class="floating-contact" aria-label="Aller au formulaire de contact">
+    <svg class="phone-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;margin-right:8px;">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+    Nous contacter
+  </a>
 
   <footer class="site-footer">
     <div class="container footer-content">

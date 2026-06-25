@@ -218,59 +218,95 @@ async function fetchProjects() {
       return;
     }
 
-    const projectsHtml = data.map(project => {
-      let imageHtml = `<img src="${esc(project.image_url)}" alt="${esc(project.title)}" loading="lazy" />`;
-      
-      if (project.is_before_after && project.image_before_url) {
-        imageHtml = `
-          <div class="before-after-wrapper" style="--slider-pos: 50%;">
-            <div class="before-after-container">
-              <img src="${esc(project.image_url)}" alt="${esc(project.title)} (Après)" class="img-after" loading="lazy" />
-              <div class="img-before-wrapper">
-                <img src="${esc(project.image_before_url)}" alt="${esc(project.title)} (Avant)" class="img-before" loading="lazy" />
-              </div>
-              <div class="slider-handle">
-                <div class="slider-handle-circle">
-                  <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M15 18l-6-6 6-6" /><path d="M9 18l6-6-6-6" style="transform:translate(6px,0)"/></svg>
+    const renderProjects = (projectsToRender) => {
+      if (projectsToRender.length === 0) {
+        return `<div class="projects-empty" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+          <p style="margin:0;font-size:1.1rem;">Aucune réalisation ne correspond à cette catégorie.</p>
+        </div>`;
+      }
+      return projectsToRender.map(project => {
+        let imageHtml = `<img src="${esc(project.image_url)}" alt="${esc(project.title)}" loading="lazy" />`;
+        
+        if (project.is_before_after && project.image_before_url) {
+          imageHtml = `
+            <div class="before-after-wrapper" style="--slider-pos: 50%;">
+              <div class="before-after-container">
+                <img src="${esc(project.image_url)}" alt="${esc(project.title)} (Après)" class="img-after" loading="lazy" />
+                <div class="img-before-wrapper">
+                  <img src="${esc(project.image_before_url)}" alt="${esc(project.title)} (Avant)" class="img-before" loading="lazy" />
+                </div>
+                <div class="slider-handle">
+                  <div class="slider-handle-circle">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M15 18l-6-6 6-6" /><path d="M9 18l6-6-6-6" style="transform:translate(6px,0)"/></svg>
+                  </div>
                 </div>
               </div>
+              <input type="range" min="0" max="100" value="50" class="slider-range" oninput="this.parentElement.style.setProperty('--slider-pos', this.value + '%')">
+              <div class="before-after-labels"><span class="label-before">Avant</span><span class="label-after">Après</span></div>
             </div>
-            <input type="range" min="0" max="100" value="50" class="slider-range" oninput="this.parentElement.style.setProperty('--slider-pos', this.value + '%')">
-            <div class="before-after-labels"><span class="label-before">Avant</span><span class="label-after">Après</span></div>
-          </div>
-        `;
-      }
+          `;
+        }
 
-      // Structure HTML pour la page d'accueil
-      if (homeContainer) {
-        return `
-          <article class="blog-preview-card card reveal visible">
-            ${imageHtml}
-            <div>
-              <p class="blog-tag">${esc(project.tag)}</p>
-              <h3>${esc(project.title)}</h3>
-              <p>${esc(project.description)}</p>
-            </div>
-          </article>
-        `;
-      }
-      // Structure HTML pour la page blog
-      else if (blogContainer) {
-        return `
-          <article class="blog-card card reveal visible">
-            ${imageHtml}
-            <div class="blog-card-body">
-              <p class="blog-tag">${esc(project.tag)}</p>
-              <h2>${esc(project.title)}</h2>
-              <p>${esc(project.description)}</p>
-            </div>
-          </article>
-        `;
-      }
-    }).join('');
+        // Structure HTML pour la page d'accueil
+        if (homeContainer) {
+          return `
+            <article class="blog-preview-card card reveal visible">
+              ${imageHtml}
+              <div>
+                <p class="blog-tag">${esc(project.tag)}</p>
+                <h3>${esc(project.title)}</h3>
+                <p>${esc(project.description)}</p>
+              </div>
+            </article>
+          `;
+        }
+        // Structure HTML pour la page blog
+        else if (blogContainer) {
+          return `
+            <article class="blog-card card reveal visible">
+              ${imageHtml}
+              <div class="blog-card-body">
+                <p class="blog-tag">${esc(project.tag)}</p>
+                <h2>${esc(project.title)}</h2>
+                <p>${esc(project.description)}</p>
+              </div>
+            </article>
+          `;
+        }
+      }).join('');
+    };
 
-    if (homeContainer) homeContainer.innerHTML = projectsHtml;
-    if (blogContainer) blogContainer.innerHTML = projectsHtml;
+    if (homeContainer) homeContainer.innerHTML = renderProjects(data);
+    
+    if (blogContainer) {
+      blogContainer.innerHTML = renderProjects(data);
+
+      const filtersContainer = document.getElementById("blog-filters-container");
+      if (filtersContainer) {
+        const uniqueTags = [...new Set(data.map(p => p.tag))].filter(Boolean);
+        
+        if (uniqueTags.length > 0) {
+          let filtersHtml = `<button class="filter-btn active" data-filter="all">Tout afficher</button>`;
+          uniqueTags.forEach(tag => {
+            filtersHtml += `<button class="filter-btn" data-filter="${esc(tag)}">${esc(tag)}</button>`;
+          });
+          filtersContainer.innerHTML = filtersHtml;
+
+          const btns = filtersContainer.querySelectorAll('.filter-btn');
+          btns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              btns.forEach(b => b.classList.remove('active'));
+              e.target.classList.add('active');
+              
+              const filterVal = e.target.getAttribute('data-filter');
+              const filteredData = filterVal === 'all' ? data : data.filter(p => p.tag === filterVal);
+              
+              blogContainer.innerHTML = renderProjects(filteredData);
+            });
+          });
+        }
+      }
+    }
 
   } catch (err) {
     console.error("Erreur de récupération des projets:", err.message);

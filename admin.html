@@ -122,7 +122,17 @@
           <input type="text" id="project-title" required placeholder="Ex: Cuisine haut de gamme" />
 
           <label>Tag (Catégorie)</label>
-          <input type="text" id="project-tag" required placeholder="Ex: Rénovation intérieure" />
+          <select id="project-tag" required>
+            <option value="">Sélectionnez une catégorie...</option>
+            <option value="Rénovation globale">Rénovation globale</option>
+            <option value="Cuisine">Cuisine</option>
+            <option value="Salle de bain / Sanitaire">Salle de bain / Sanitaire</option>
+            <option value="Électricité / Éclairage">Électricité / Éclairage</option>
+            <option value="Peinture / Finitions">Peinture / Finitions</option>
+            <option value="Menuiserie / Agencement">Menuiserie / Agencement</option>
+            <option value="Climatisation">Climatisation</option>
+            <option value="Autre">Autre</option>
+          </select>
 
           <label>Description courte</label>
           <textarea id="project-desc" rows="3" required placeholder="Décrivez le projet..."></textarea>
