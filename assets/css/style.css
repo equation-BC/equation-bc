@@ -2319,5 +2319,17 @@ ol {
   }
 }
 
-
-
+/* Boutons avec icône uniquement */
+.btn-icon-only {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.btn-icon-only svg {
+  width: 24px;
+  height: 24px;
+}
